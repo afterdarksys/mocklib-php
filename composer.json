@@ -1,0 +1,30 @@
+{
+    "name": "mockfactory/mocklib",
+    "description": "PHP SDK for MockFactory cloud emulation",
+    "type": "library",
+    "keywords": ["mockfactory", "aws", "cloud", "testing", "emulation"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "MockFactory",
+            "email": "support@mockfactory.io"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "MockFactory\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MockFactory\\Tests\\": "tests/"
+        }
+    }
+}
